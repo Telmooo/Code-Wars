@@ -1,8 +1,6 @@
 def duplicate_encode(word):
+    word = word.lower()
     occurences = {}
-    code = ""
-    for char in word.lower():
-        if char not in occurences: occurences[char] = word.lower().count(char)
-        if char in occurences:
-            code += "(" if occurences[char]==1 else ")"
-    return code
+    for char in word:
+        occurences[char] = ')' if char in occurences else '('
+    return ''.join(occurences[char] for char in word)
