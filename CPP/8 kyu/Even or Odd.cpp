@@ -1,6 +1,6 @@
-std::string even_or_odd(int number) 
+std::string even_or_odd(int n) 
 {
-  if (number % 2 == 0) {
+  if (n % 2 == 0) {
     return "Even";
   }
   return "Odd";
