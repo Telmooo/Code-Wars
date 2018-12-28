@@ -1,11 +1,10 @@
 // Hello World!
 //ASCII Values: 
-//  H->72; e->101
-//  l->108; o->111
-//  " "->32; W->87
-//  r->114; d->100
-//  !->33
-
+//  H~72; e~101
+//  l~108; o~111
+//  " "~32; W~87
+//  r~114; d~100
+//  !~33
 //generate cell #0 with value 10
 ++++++++++
 //we multiples of ten generate close values for characters
@@ -19,7 +18,6 @@
 <<<<<- //go to cell #0 and decrement
 ]
 //characters are basically set, let's say Hello now :)
-
 >++. //H character
 >+. //e character
 >--.. //l character (2 l's)
