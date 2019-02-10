@@ -1,0 +1,10 @@
+#include <stdlib.h>
+
+unsigned bin_to_decimal(const char *bin) {
+    unsigned len = strlen(bin);
+    unsigned decimal = 0, power = len - 1;
+    while (*bin != '\0') {
+        decimal += (*bin++ - '0') * (1 << power--);
+    }
+    return decimal;
+}
